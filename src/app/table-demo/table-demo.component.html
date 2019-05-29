@@ -1,16 +1,12 @@
-<nz-table #nzTable [nzData]="listOfDisplayData">
+<nz-table #nzTable [nzFrontPagination]="false" [nzShowPagination]="false" [nzData]="listOfDisplayData">
   <thead>
     <tr>
+      <th nzShowSort [(nzSort)]="mapOfSort.CreatedOn" (nzSortChange)="sort('CreatedOn', $event)">交易時間</th>
       <th nzCustomFilter>
-        Name
+        交易序號
         <nz-dropdown nzTrigger="click" nzPlacement="bottomRight" [nzClickHide]="false" nzTableFilter #dropdown>
-          <i
-            nz-icon
-            nzType="search"
-            class="ant-table-filter-icon"
-            [class.ant-table-filter-open]="dropdown.nzVisible"
-            nz-dropdown
-          ></i>
+          <i nz-icon nzType="search" class="ant-table-filter-icon" [class.ant-table-filter-open]="dropdown.nzVisible"
+            nz-dropdown></i>
           <div class="search-box">
             <input type="text" nz-input placeholder="Search name" [(ngModel)]="searchValue" />
             <button nz-button nzSize="small" nzType="primary" (click)="search()" class="search-button">
@@ -20,15 +16,16 @@
           </div>
         </nz-dropdown>
       </th>
-      <th>Age</th>
-      <th nzShowFilter [nzFilters]="listOfFilterAddress" (nzFilterChange)="filterAddressChange($event)">Address</th>
+      <th nzShowSort [(nzSort)]="mapOfSort.In" (nzSortChange)="sort('In', $event)">轉進</th>
+      <th nzShowSort [(nzSort)]="mapOfSort.Out" (nzSortChange)="sort('Out', $event)">轉出</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let data of nzTable.data">
-      <td>{{ data.name }}</td>
-      <td>{{ data.age }}</td>
-      <td>{{ data.address }}</td>
+      <td>{{ data.CreatedOn }}</td>
+      <td>{{ data.Id }}</td>
+      <td>{{ data.In }}</td>
+      <td>{{ data.Out }}</td>
     </tr>
   </tbody>
 </nz-table>
