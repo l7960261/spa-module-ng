@@ -1,7 +1,8 @@
 <nz-table #nzTable [nzFrontPagination]="false" [nzShowPagination]="false" [nzData]="listOfDisplayData">
   <thead>
     <tr>
-      <th nzShowSort [(nzSort)]="mapOfSort.CreatedOn" (nzSortChange)="sort('CreatedOn', $event)">交易時間</th>
+      <th nzShowSort [(nzSort)]="mapOfSort.createdOn" (nzSortChange)="sort('createdOn', $event)">交易時間</th>
+      <th>數位帳戶</th>
       <th nzCustomFilter>
         交易序號
         <nz-dropdown nzTrigger="click" nzPlacement="bottomRight" [nzClickHide]="false" nzTableFilter #dropdown>
@@ -16,16 +17,17 @@
           </div>
         </nz-dropdown>
       </th>
-      <th nzShowSort [(nzSort)]="mapOfSort.In" (nzSortChange)="sort('In', $event)">轉進</th>
-      <th nzShowSort [(nzSort)]="mapOfSort.Out" (nzSortChange)="sort('Out', $event)">轉出</th>
+      <th nzShowSort [(nzSort)]="mapOfSort.in" (nzSortChange)="sort('in', $event)">轉進</th>
+      <th nzShowSort [(nzSort)]="mapOfSort.out" (nzSortChange)="sort('out', $event)">轉出</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let data of nzTable.data">
-      <td>{{ data.CreatedOn }}</td>
-      <td>{{ data.Id }}</td>
-      <td>{{ data.In }}</td>
-      <td>{{ data.Out }}</td>
+      <td>{{ data.createdOn }}</td>
+      <td>{{ data.email }}</td>
+      <td>{{ data.id }}</td>
+      <td>{{ data.in }}</td>
+      <td>{{ data.out }}</td>
     </tr>
   </tbody>
 </nz-table>

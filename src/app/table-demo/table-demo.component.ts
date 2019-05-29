@@ -11,12 +11,12 @@ export class TableDemoComponent implements OnInit {
   sortName: string | null = null;
   sortValue: string | null = null;
   listOfSearchAddress: string[] = [];
-  listOfData: Array<{ CreatedOn: string; Id: string; In: number; Out: number; }> = orders;
+  listOfData: Array<{ createdOn: string; id: string; in: number; out: number; email: string; }> = orders;
   listOfDisplayData = [...this.listOfData];
   mapOfSort: { [key: string]: any } = {
-    CreatedOn: null,
-    In: null,
-    Out: null
+    createdOn: null,
+    in: null,
+    out: null
   };
 
   constructor() { }
@@ -40,7 +40,7 @@ export class TableDemoComponent implements OnInit {
 
   search(): void {
     const listOfData = this.listOfData
-      .filter(item => item.Id.indexOf(this.searchValue) !== -1);
+      .filter(item => item.id.indexOf(this.searchValue) !== -1);
 
     if (this.sortName && this.sortValue) {
       this.listOfDisplayData = listOfData.sort((a, b) =>
