@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/spa-module-ng",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,7 +8,7 @@
     ],
     "headers": [
       {
-        "source": "**/*.@(js|css|eot|otf|ttf|ttc|woff|font.css)",
+        "source": "**/*.@(js|css|svg|eot|otf|ttf|ttc|woff|font.css)",
         "headers": [
           {
             "key": "Access-Control-Allow-Origin",
