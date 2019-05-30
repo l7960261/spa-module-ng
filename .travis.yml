@@ -7,7 +7,7 @@ before_install:
 install:
   - npm install
 script:
-  - firebase deploy --only functions --token "$FIREBASE_TOKEN"
+  - firebase deploy --token "$FIREBASE_TOKEN"
 notifications:
   email:
     on_failure: change
