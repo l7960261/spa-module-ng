@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.com/l7960261/spa-module-ng.svg?branch=master)](https://travis-ci.com/l7960261/spa-module-ng)
+[![Build Status](https://travis-ci.com/l7960261/spa-module-ng.svg?branch=master)](https://travis-ci.com/l7960261/spa-module-ng) [![Dependency Status](https://david-dm.org/l7960261/spa-module-ng.svg)](https://david-dm.org/l7960261/spa-module-ng) [![devDependency Status](https://david-dm.org/l7960261/spa-module-ng/dev-status.svg)](https://david-dm.org/l7960261/spa-module-ng?type=dev)
 
 # SpaModuleNg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
 
