@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/l7960261/spa_module_ng.svg?branch=master)](https://travis-ci.com/l7960261/spa_module_ng)
+[![Build Status](https://travis-ci.com/l7960261/spa-module-ng.svg?branch=master)](https://travis-ci.com/l7960261/spa-module-ng)
 
 # SpaModuleNg
 
