@@ -172,7 +172,8 @@
         "single-spa-serve": {
           "builder": "single-spa-angular:dev-server",
           "options": {
-            "browserTarget": "spa-module-ng:single-spa"
+            "browserTarget": "spa-module-ng:single-spa",
+            "port": 4201
           },
           "configurations": {
             "production": {
