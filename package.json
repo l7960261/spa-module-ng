@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:single-spa": "ng run spa-module-ng:single-spa --configuration=production",
-    "serve:single-spa": "ng run spa-module-ng:single-spa-serve"
+    "serve:single-spa": "ng run spa-module-ng:single-spa-serve --live-reload false"
   },
   "private": true,
   "dependencies": {
