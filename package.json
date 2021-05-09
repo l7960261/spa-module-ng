@@ -25,7 +25,7 @@
     "@angular/router": "~8.1.1",
     "core-js": "^2.5.4",
     "dayjs": "^1.8.15",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.21",
     "ng-zorro-antd": "^8.0.2",
     "rxjs": "~6.5.2",
     "single-spa-angular": "^3.0.0-rc.1",
